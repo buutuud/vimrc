@@ -23,4 +23,23 @@ else
 	git clone https://github.com/VundleVim/Vundle.vim.git $VundlePlguin
 fi
 
+bundle="~/.vim/bundle"
+
+#extended.vim need molokai colorscheme
+echo ""
+echo "3.Install Molokai colorscheme"
+if [[ -d ~/.vim/bundle/vim-colorschemes ]];then
+	echo 'vim-colorschemes Alredy Install ....'
+else
+	git clone https://github.com/flazz/vim-colorschemes.git ~/.vim/bundle/vim-colorschemes
+fi
+
+if ! [ -d ~/.vim/bundle/vim-colorscheme-switcher ]; then
+	git clone https://github.com/xolox/vim-colorscheme-switcher.git ~/.vim/bundle/vim-colorscheme-switcher
+else
+	echo 'vim-colorscheme-switcher Alredy Install ....'
+fi
+
+
+
 echo "OK..Installed the Ultimate Vim configuration successfully! Enjoy :-)"

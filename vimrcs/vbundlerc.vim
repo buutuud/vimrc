@@ -10,6 +10,14 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+""""""""""""""""""""""""""""""
+" => colorscheme
+""""""""""""""""""""""""""""""
+Plugin 'https://github.com/xolox/vim-misc.git'
+Plugin 'https://github.com/vim-scripts/vim-colorscheme-switcher.git'
+Plugin 'flazz/vim-colorschemes'
+
+
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
