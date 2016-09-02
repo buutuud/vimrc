@@ -4,6 +4,7 @@ if [[ -d $WINDIR ]]; then
     echo "You VIM PlatForm Is Windows! Enjoy"
     if [[ -d ./plugins_w ]]; then
     	cp ./plugins_w/* $WINDIR
+    	ls ./plugins_w
     	echo "Install ctags plugin to $WINDIR ..."
     fi
 fi
