@@ -14,3 +14,4 @@ let g:ctrlp_custom_ignore = {
             \ 'link': 'SOME_BAD_SYMBOLIC_LINKS',
             \ }
 nmap <silent> <leader><F5> :ClearAllCtrlPCaches<CR>
+nnoremap <leader>b :CtrlPBuffer<CR>

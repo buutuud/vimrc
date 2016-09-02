@@ -24,9 +24,9 @@ Bundle 'https://github.com/kien/ctrlp.vim.git'
 call s:Configuration('ctrlprc.vim')
 
 "http://vimawesome.com/plugin/vim-airline
-Plugin 'bling/vim-airline'
+"Plugin 'bling/vim-airline'
 "rc
-let g:airline#extensions#tabline#enabled = 1
+"let g:airline#extensions#tabline#enabled = 1
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Nerd Tree
@@ -48,6 +48,8 @@ Plugin 'tpope/vim-fugitive'
 "Vim plugin that displays tags in a window, ordered by scope
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Plugin 'majutsushi/tagbar'
+nnoremap <leader>] :TagbarToggle<CR>
+
 Plugin 'taglist.vim'
 Plugin 'heavenshell/vim-ctags-project'
 Plugin 'szw/vim-tags'
@@ -59,6 +61,11 @@ let Tlist_File_Fold_Auto_Close=1             " 自动折叠
 :noremap <Leader>t :!ctags.sh<CR>
 :set tags=tags;/
 
+Plugin 'FuzzyFinder'
+nnoremap <leader>ff :FufFile<CR> 
+
+Plugin 'shougo/unite.vim'
+<LocalLeader>c or :Unite menu:code
 
 """"""""""""""""""""""""""""""
 " => colorscheme
@@ -73,7 +80,7 @@ Plugin 'flazz/vim-colorschemes'
 " plugin on GitHub repo
 " Plugin 'tpope/vim-fugitive'
 " plugin from http://vim-scripts.org/vim/scripts.html
-" Plugin 'L9'
+Plugin 'L9'
 " Git plugin not hosted on GitHub
 " Plugin 'git://git.wincent.com/command-t.git'
 " git repos on your local machine (i.e. when working on your own plugin)
