@@ -6,9 +6,30 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
+function! s:Configuration(path)
+    if filereadable(simplify(expand('~/.vim_runtime/vimrcs' . '/' . a:path, 1)))
+        execute
+                    \ ':source'
+                    \ simplify(expand('~/.vim_runtime/vimrcs' . '/' . a:path, 1))
+    endif
+endfunction
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
+
+""""""""""""""""""""""""""""""
+" => ctrl-p
+""""""""""""""""""""""""""""""
+Bundle 'https://github.com/kien/ctrlp.vim.git'
+call s:Configuration('ctrlprc.vim')
+
+"http://vimawesome.com/plugin/vim-airline
+Plugin 'bling/vim-airline'
+"rc
+let g:airline#extensions#tabline#enabled = 1
+
+
+
 
 """"""""""""""""""""""""""""""
 " => colorscheme
