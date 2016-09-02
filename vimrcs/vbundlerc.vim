@@ -28,7 +28,16 @@ Plugin 'bling/vim-airline'
 "rc
 let g:airline#extensions#tabline#enabled = 1
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Nerd Tree
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plugin 'scrooloose/nerdtree'
+call histadd("cmd","load ".expand('<sfile>:t:r')."...")
+map <leader>nn :NERDTreeToggle<cr>
+map <leader>nb :NERDTreeFromBookmark 
+map <leader>nf :NERDTreeFind<cr>
 
+Plugin 'rking/ag.vim'
 
 
 """"""""""""""""""""""""""""""
