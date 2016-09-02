@@ -39,6 +39,26 @@ map <leader>nf :NERDTreeFind<cr>
 
 Plugin 'rking/ag.vim'
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Git
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plugin 'tpope/vim-fugitive'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"Vim plugin that displays tags in a window, ordered by scope
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Plugin 'majutsushi/tagbar'
+Plugin 'taglist.vim'
+Plugin 'heavenshell/vim-ctags-project'
+Plugin 'szw/vim-tags'
+"nnoremap <silent><F9> :TlistToggle<CR>      "使用F9打开Taglist
+let Tlist_Show_One_File=0                    " 只显示当前文件的tags
+let Tlist_Exit_OnlyWindow=1                  " 如果Taglist窗口是最后一个窗口则退出Vim
+let Tlist_Use_Right_Window=0                 " 在右侧窗口中显示
+let Tlist_File_Fold_Auto_Close=1             " 自动折叠
+:noremap <Leader>t :!ctags.sh<CR>
+:set tags=tags;/
+
 
 """"""""""""""""""""""""""""""
 " => colorscheme

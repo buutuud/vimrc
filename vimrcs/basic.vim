@@ -224,8 +224,10 @@ map <leader>bd :Bclose<cr>
 map <leader>ba :1,1000 bd!<cr>
 
 " buffer change
-map <leader>l :bnext<cr>
-map <leader>h :bprevious<cr>
+" map <leader>l :bnext<cr>
+" map <leader>h :bprevious<cr>
+map <C-J> :bnext<cr>
+map <C-K> :bprevious<cr>
 
 " Useful mappings for managing tabs
 map <leader>tn :tabnew<cr>
