@@ -26,7 +26,7 @@ nmap mw <esc>yiw
 nmap mp <esc>viwp
 nmap me <esc>y$
 nmap <leader><F1> :redir! > ~/.vim_runtime/vim_key.txt<cr>:silent verbose map<cr>:redir END<cr>
-nmap <leader><F2> :e ~/.vim_runtime/vim_key.txt<cr>
+nmap <leader><F2> :e ~\.vim_runtime\vimrcs\vbundlerc.vim<cr>
 
 "donn't save viminfo file
 set viminfo='0,:0,<0,@0,f0
@@ -46,3 +46,19 @@ autocmd FileType python set tabstop=4 shiftwidth=4 expandtab
 "replace word under cursor global
 "<C-r><C-w> = cursor under word
 nnoremap <Leader>s :%s/\<<C-r><C-w>\>/
+
+" 定义快捷键到行首和行尾
+nmap LB 0
+nmap LE $
+" 设置快捷键将选中文本块复制至系统剪贴板
+vnoremap <Leader>y "+y
+" 设置快捷键将系统剪贴板内容粘贴至 vim
+nmap <Leader>p "+p
+" 定义快捷键关闭当前分割窗口
+nmap <Leader>q :q<CR>
+" 定义快捷键保存所有窗口内容并退出 vim
+nmap <Leader>WQ :wa<CR>:q<CR>
+" 不做任何保存，直接退出 vim
+nmap <Leader>Q :qa!<CR>
+" 定义快捷键在结对符之间跳转
+nmap <Leader>M %
