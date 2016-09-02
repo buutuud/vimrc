@@ -16,11 +16,10 @@ fi
 echo ""
 echo "2.Git Clone VBundle To .Vim Dir"
 VundlePlugin='~/.vim/bundle/Vundle.vim'
-if [ -d  $VundlePlguin]
-then
+if [ -d  ~/.vim/bundle/Vundle.vim ];then
 	echo "VBundle Alredy Install ...."
 else
-	git clone https://github.com/VundleVim/Vundle.vim.git $VundlePlguin
+	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 fi
 
 bundle="~/.vim/bundle"
