@@ -28,4 +28,13 @@ c 命令行
 
  编辑
 ==
+```
 CTRL-O goes to the older position, and CTRL-I or tab goes to the newer one
+```
+
+ 数字
+==
+```
+Ctrl-a Number+1
+Ctrl-x Number-1
+```
