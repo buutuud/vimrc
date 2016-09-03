@@ -25,3 +25,7 @@ l 插入、命令行和 Lang-Arg 模式的 ":lmap" 映射
 c 命令行 
 0 行首
 ```
+
+ 编辑
+==
+CTRL-O goes to the older position, and CTRL-I or tab goes to the newer one
