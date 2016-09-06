@@ -73,6 +73,27 @@ nnoremap <F9> :GutentagsUpdate<CR>
 Plugin 'derekwyatt/vim-fswitch' 
 map <leader>o :FSHere<CR>
 
+
+" Track the engine.
+Plugin 'SirVer/ultisnips'
+
+" Snippets are separated from the engine. Add this if you want them:
+Plugin 'honza/vim-snippets'
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+"-------------
+"This plug-in provides automatic closing of quotes, parenthesis, brackets, etc., 
+Plugin 'raimondi/delimitmate'
+
+"------
+Plugin 'Shougo/vimfiler.vim'
+
+"------
+Plugin 'tyru/restart.vim'
+
 """"""""""""""""""""""""""""""
 " => colorscheme
 """"""""""""""""""""""""""""""
