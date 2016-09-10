@@ -178,6 +178,7 @@ set smarttab
 " 1 tab == 4 spaces
 set shiftwidth=4
 set tabstop=4
+map <F2> :retab <CR> :wq! <CR>
 
 " Linebreak on 500 characters
 set lbr
@@ -226,8 +227,8 @@ map <leader>ba :1,1000 bd!<cr>
 " buffer change
 " map <leader>l :bnext<cr>
 " map <leader>h :bprevious<cr>
-map <C-J> :bnext<cr>
-map <C-K> :bprevious<cr>
+map <C-Right> :bnext<cr>
+map <C-Left> :bprevious<cr>
 
 " Useful mappings for managing tabs
 map <leader>tn :tabnew<cr>

@@ -8,10 +8,12 @@ let g:ctrlp_root_markers = ['.root','.git']
 
 let g:ctrlp_max_height = 20
 "let g:ctrlp_custom_ignore = 'node_modules\|^\.DS_Store\|^\.git\|^\.coffee|^Obj|^List'
+"let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 let g:ctrlp_custom_ignore = {
-            \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+            \ 'dir':  '\v[\/]\.(git|hg|svn)$|Obj',
             \ 'file': '\v\.(exe|so|dll|png|plist|txt|mp3|pdb|ccbi|fnt|ttf|tmx|ilk|manifest)$',
             \ 'link': 'SOME_BAD_SYMBOLIC_LINKS',
             \ }
 nmap <silent> <leader><F5> :ClearAllCtrlPCaches<CR>
 nnoremap <leader>b :CtrlPBuffer<CR>
+nmap <silent> <leader>f :CtrlPMixed<CR>

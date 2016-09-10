@@ -24,9 +24,9 @@ Bundle 'https://github.com/kien/ctrlp.vim.git'
 call s:Configuration('ctrlprc.vim')
 
 "http://vimawesome.com/plugin/vim-airline
-"Plugin 'bling/vim-airline'
+Plugin 'bling/vim-airline'
 "rc
-"let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#enabled = 1
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Nerd Tree
@@ -61,7 +61,7 @@ let Tlist_File_Fold_Auto_Close=1             " 自动折叠
 :set tags=tags;/
 
 Plugin 'FuzzyFinder'
-nnoremap <leader>ff :FufFile<CR> 
+nnoremap <leader>f :FufFile<CR> 
 
 """"""""""""""""""""""""""""""
 " => colorscheme
@@ -71,7 +71,31 @@ nnoremap <F9> :GutentagsUpdate<CR>
 
 
 Plugin 'derekwyatt/vim-fswitch' 
-map <leader>o :FSHere<CR>
+map <leader>o :FSSplitRight<CR>
+
+
+" Track the engine.
+Plugin 'SirVer/ultisnips'
+
+" Snippets are separated from the engine. Add this if you want them:
+Plugin 'honza/vim-snippets'
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+"-------------
+"This plug-in provides automatic closing of quotes, parenthesis, brackets, etc., 
+Plugin 'raimondi/delimitmate'
+
+"------
+Plugin 'Shougo/vimfiler.vim'
+
+"------
+Plugin 'tyru/restart.vim'
+
+"------
+Plugin 'ervandew/supertab'
 
 """"""""""""""""""""""""""""""
 " => colorscheme
@@ -79,6 +103,87 @@ map <leader>o :FSHere<CR>
 Plugin 'https://github.com/xolox/vim-misc.git'
 Plugin 'https://github.com/vim-scripts/vim-colorscheme-switcher.git'
 Plugin 'flazz/vim-colorschemes'
+
+
+
+"Plugin 'Shougo/neocomplete.vim'
+"call s:Configuration('neocomplete.rc.vim')
+
+
+Plugin 'ervandew/supertab'
+let g:SuperTabDefaultCompletionType = "<c-n>"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 " The following are examples of different formats supported.
