@@ -94,6 +94,9 @@ Plugin 'Shougo/vimfiler.vim'
 "------
 Plugin 'tyru/restart.vim'
 
+"------
+Plugin 'ervandew/supertab'
+
 """"""""""""""""""""""""""""""
 " => colorscheme
 """"""""""""""""""""""""""""""

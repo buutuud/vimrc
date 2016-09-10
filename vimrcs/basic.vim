@@ -178,6 +178,7 @@ set smarttab
 " 1 tab == 4 spaces
 set shiftwidth=4
 set tabstop=4
+map <F2> :retab <CR> :wq! <CR>
 
 " Linebreak on 500 characters
 set lbr
