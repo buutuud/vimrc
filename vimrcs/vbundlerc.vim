@@ -94,9 +94,6 @@ Plugin 'Shougo/vimfiler.vim'
 "------
 Plugin 'tyru/restart.vim'
 
-"------
-Plugin 'ervandew/supertab'
-
 """"""""""""""""""""""""""""""
 " => colorscheme
 """"""""""""""""""""""""""""""
@@ -110,6 +107,7 @@ Plugin 'flazz/vim-colorschemes'
 "call s:Configuration('neocomplete.rc.vim')
 
 
+"------
 Plugin 'ervandew/supertab'
 let g:SuperTabDefaultCompletionType = "<c-n>"
 
