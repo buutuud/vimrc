@@ -42,6 +42,7 @@ set shortmess=atI
 
 "python setting
 autocmd FileType python set tabstop=4 shiftwidth=4 expandtab  
+autocmd FileType c set tabstop=4 shiftwidth=4 expandtab  
 
 "replace word under cursor global
 "<C-r><C-w> = cursor under word
@@ -62,3 +63,9 @@ nmap <Leader>WQ :wa<CR>:q<CR>
 nmap <Leader>Q :qa!<CR>
 " 定义快捷键在结对符之间跳转
 nmap <Leader>M %
+
+" Uncomment the following to have Vim jump to the last position when
+" reopening a file
+"if has("autocmd")
+""  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+"endif
